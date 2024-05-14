@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseTour Login</title>
+    <link rel="stylesheet" href="3style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section"></div>
+        <div class="login-section">
+            <h1>Selamat Datang </h1>
+            <p>di WiseTour</p>
+            <form action="#">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" required>
+                        <span class="toggle-password" onclick="togglePassword()"></span>
+                    </div>
+                </div>
+                <div class="input-group remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Ingat Saya</label>
+                </div>
+                <div class="input-group forgot-password">
+                    <a href="#">Lupa Kata Sandi?</a>
+                </div>
+                <button type="button" class="btn login-btn" onclick="redirectToLogin()">Log In</button>
+                <button type="button" class="btn signup-btn" onclick="redirectToSignUp()">Sign up</button>
+            </form>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="2signin.html">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = "3afterlog.html"; // Ganti "login.html" dengan halaman login yang diinginkan
+        }
+        
+        function redirectToSignUp() {
+            window.location.href = "2signin.html"; // Ganti "2signin.html" dengan halaman sign up yang diinginkan
+        }
+    </script>
+</body>
+</html>
